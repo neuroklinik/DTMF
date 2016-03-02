@@ -1,0 +1,1 @@
+f = Flatten[Table[{a, b}, {a, {697, 770, 852, 941}}, {b, {1209, 1336, 1477, 1633}}], 1]; k = "123A456B789C*0D"; Manipulate[Play[Sin[f[[Position[Characters[k], x][[1]][[1]]]][[1]] 2 Pi t] + Sin[f[[Position[Characters[k], x][[1]][[1]]]][[2]] 2 Pi t], {t, 0, 1}], {x, Characters[k], Setter}]
